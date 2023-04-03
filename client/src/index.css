@@ -1,13 +1,558 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+/* Home page  */
+
+.home-page {
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about {
+  width: 70%;
+  margin: 20px 0;
+}
+
+.mission {
+  width: 70%;
+}
+.mission-list {
+  margin-left: 10px;
+  padding: 20px;
+}
+
+.home-page-titles {
+  margin: 10px 0;
+  font-size: 2rem;
+}
+/* Navbar */
+
+.Navbar {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3f51b5;
+  color: white;
+}
+.Navbar .span-logo {
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+}
+.nav-list {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.items {
+  color: white;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.7rem;
+}
+
+.items:hover {
+  border: 1px solid #5870fd;
+  outline: none;
+  background-color: white;
+  color: #4c62df;
+  transition: all 0.5s;
+  border-radius: 20px;
+}
+
+.item-signup {
+  border: 1px white solid;
+  border-radius: 10px;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #3f51b5;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contact */
+
+/* Login */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+}
+
+.camu-bg {
+  max-width: 962px;
+  max-height: 60px;
+}
+
+.login .input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  background-color: rgb(253, 253, 253);
+  padding: 1rem;
+  padding-top: 2rem;
+  border-radius: 1rem;
+}
+
+.logo {
+  background-color: #c9c9ca;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  margin: 10px auto;
+}
+
+.login h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.login .input-container label {
+  margin-top: 10px;
+  margin-left: 20px;
+  align-self: flex-start;
+  color: rgb(121, 121, 121);
+}
+
+.login .input-container input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 20px;
+  width: 85%;
+  align-self: flex-start;
+  border-bottom: 1px solid;
+  border-color: rgb(231, 231, 231);
+  color: black;
+  font-size: 0.8rem;
+}
+
+.login .addtask input[type="text"]::placeholder {
+  color: rgb(204, 204, 204);
+}
+
+.login button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 20px;
+  width: 85%;
+  align-self: flex-start;
+  border-radius: 1rem;
+  background-color: rgb(81, 171, 255);
+  color: white;
+  font-size: 0.8rem;
+}
+
+.login button:hover {
+  background-color: rgb(47, 154, 255);
+  color: white;
+}
+
+.login span {
+  margin: 10px;
+  font-size: 0.8rem;
+  color: rgb(121, 121, 121);
+}
+
+.login p {
+  margin: 10px;
+  font-size: 0.8rem;
+  color: rgb(255, 0, 0);
+}
+
+/* REgister */
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+}
+
+.register .input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  background-color: rgb(253, 253, 253);
+  padding: 1rem;
+  padding-top: 2rem;
+  border-radius: 1rem;
+}
+.register .bt-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.5rem;
+}
+
+.register .con-2 {
+  margin-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.register label {
+  margin-top: 10px;
+  margin-left: 20px;
+  align-self: flex-start;
+  color: rgb(121, 121, 121);
+}
+
+.register input {
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 20px;
+  width: 85%;
+  align-self: flex-start;
+  border-color: rgb(231, 231, 231);
+  color: black;
+  font-size: 0.8rem;
+}
+.register .addtask input[type="text"]::placeholder {
+  color: rgb(204, 204, 204);
+}
+
+.register button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 20px;
+  width: 85%;
+  align-self: flex-start;
+  border-radius: 1rem;
+  background-color: rgb(81, 171, 255);
+  color: white;
+  font-size: 0.8rem;
+}
+
+.register button:hover {
+  background-color: rgb(47, 154, 255);
+  color: white;
+}
+
+.register span {
+  margin: 10px;
+  font-size: 0.8rem;
+  color: rgb(121, 121, 121);
+}
+
+.register p {
+  margin: 10px;
+  font-size: 0.8rem;
+  color: rgb(255, 0, 0);
+}
+
+/* Side Bar */
+.Sidebar {
+  height: 100%;
+  width: 250px;
+  background-color: inherit;
+  color: #78909c;
+}
+
+.Sidebar-list {
+  height: auto;
+  width: 100%;
+  padding: 0;
+}
+
+.Sidebar .logo {
+  background-color: #c9c9ca;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  margin: 10px auto;
+}
+
+.Sidebar-list .row {
+  width: 100%;
+  height: 50px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row #icon {
+  flex: 30%;
+  display: grid;
+  place-items: center;
+}
+.row #title {
+  flex: 70%;
+}
+.Sidebar-list .row:hover {
+  cursor: pointer;
+  background-color: #e1e1e1;
+}
+
+/* user nav bar */
+.user-navbar {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3f51b5;
+  color: white;
+}
+.user-navbar .nav-logo {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+}
+.nav-logo h2 {
+  font-size: 16px;
+}
+.user-navbar .hello {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.user-navbar-logout {
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 20px;
+  background-color: #4c62df;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.user-navbar-logout:hover {
+  border: 1px solid #5870fd;
+  outline: none;
+  background-color: white;
+  color: #4c62df;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+/* Admin Page */
+
+.Admin-stu-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.admin-stu-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 30px;
+  background-color: #eceff1;
+}
+.admin-student-details {
+  background-color: white;
+  padding: 20px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.admin-student-details .heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+  color: rgb(0, 0, 0);
+}
+.admin-student-details .heading h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.admin-student-details table {
+  border: 1px solid rgb(234, 234, 234);
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.admin-student-details table caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+}
+.admin-student-details button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 20px;
+  background-color: #4c62df;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  width: fit-content;
+}
+.admin-student-details button:hover {
+  background-color: white;
+  border: 1px solid #4c62df;
+  color: #4c62df;
+}
+
+.admin-student-details table tr {
+  background-color: #eceff1;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+
+.admin-student-details table th,
+table td {
+  padding: 0.625em;
+  text-align: center;
+}
+
+.admin-student-details table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .admin-student-details table {
+    border: 0;
+  }
+
+  .admin-student-details table caption {
+    font-size: 1.3em;
+  }
+
+  .admin-student-details table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  .admin-student-details table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  .admin-student-details table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  .admin-student-details table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .admin-student-details table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+.admin-student-details .query-ack {
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 20px;
+
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  width: fit-content;
+  background-color: inherit;
+}
+/* Admin add student */
+.admin-stu-register {
+  margin: 10px;
+}
+
+.admin-stu-register .admin-stu-con-1 {
+  margin: 1rem;
+}
+
+.admin-stu-register .admin-stu-con-2 {
+  margin: 1rem;
+}
+
+.admin-stu-register input {
+  width: 100px;
+  padding-left: 10px;
+  outline: none;
+  margin: 15px;
+  border: none;
+  border-bottom: 1px solid gray;
 }
