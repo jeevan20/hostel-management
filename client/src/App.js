@@ -5,9 +5,9 @@ import Home from "./components/Homepage";
 import Contact from "./components/Contact";
 import Adminpage from "./components/Adminpage";
 import AdminQueryview from "./components/AdminQueryview";
-// import Userpage from "./components/StudentComponents/UserProfile";
-// import Complaints from "./components/StudentComponents/Complaints";
-// import Fine from "./components/StudentComponents/Fine";
+import Userpage from "./components/StudentComponents/UserProfile";
+import Complaints from "./components/StudentComponents/Complaints";
+import Fine from "./components/StudentComponents/Fine";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AdminFineView from "./components/AdminFineView";
@@ -46,18 +46,18 @@ const router = createBrowserRouter([
     path: "/register",
     element: <Register />,
   },
-  // {
-  //   path: "/user",
-  //   element: <Userpage />,
-  // },
-  // {
-  //   path: "/Complaints",
-  //   element: <Complaints />,
-  // },
-  // {
-  //   path: "/Fine",
-  //   element: <Fine />,
-  // },
+  {
+    path: "/user",
+    element: <Userpage />,
+  },
+  {
+    path: "/Complaints",
+    element: <Complaints />,
+  },
+  {
+    path: "/Fine",
+    element: <Fine />,
+  },
 ]);
 const App = () => {
   return (
