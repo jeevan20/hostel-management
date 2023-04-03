@@ -1,0 +1,116 @@
+.stu-page-profile {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stu-page-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.stu-profile-container {
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  color: black;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.stu-profile-details {
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 50%;
+  border: 1px solid#ddd;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 15px;
+}
+
+.stud-details {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.stud-details h3 {
+  margin: 15px;
+  font-size: 16px;
+}
+
+img {
+  padding-top: 10px;
+  height: 100px;
+  width: 100px;
+}
+.stu-page-profile button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 20px;
+  background-color: #4c62df;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  width: fit-content;
+}
+.stu-page-profile button:hover {
+  background-color: white;
+  border: 1px solid #4c62df;
+  color: #4c62df;
+}
+
+/* Change Passowrd Side */
+
+.stu-change-password {
+  max-width: 400px;
+  margin: 15px;
+  width: 50%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+.stu-change-password form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.stu-change-password input {
+  width: 80%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 8px;
+  font-size: 14px;
+  padding-left: 20px;
+  margin: 10px 10px;
+}
+.change-password-close {
+  height: fit-content;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.change-password-close .close-btn {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(255, 53, 53);
+  color: white;
+}
+
+.change-password-close .close-btn:hover {
+  background-color: white;
+  color: rgb(255, 53, 53);
+  border: 1px solid rgb(255, 53, 53);
+}

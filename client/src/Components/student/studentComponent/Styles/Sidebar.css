@@ -1,0 +1,46 @@
+.stud-Sidebar {
+  height: 100%;
+  width: 250px;
+  background-color: #3f51b5;
+  color: white;
+}
+
+.stud-Sidebar-list {
+  height: auto;
+  width: 100%;
+  padding: 0;
+}
+
+.stud-Sidebar .logo {
+  background-color: #c9c9ca;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  margin: 10px auto;
+}
+
+.stud-Sidebar-list .stud-row {
+  width: 100%;
+  height: 50px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stud-row #stud-icon {
+  flex: 30%;
+  display: grid;
+  place-items: center;
+}
+.stud-row #stud-title {
+  flex: 70%;
+}
+.stud-Sidebar-list .stud-row:hover {
+  cursor: pointer;
+  color: #3f51b5;
+  background-color: white;
+}
