@@ -9,15 +9,15 @@ The Hostel Query Management System is a web application designed to streamline t
 * Easy access for Admin to search and filter queries based on different criteria such as student name, room number, etc.
             
 ## Technologies Used
-         * Front-end: HTML, CSS, JavaScript, ReactJS
-         * Back-end: NodeJS, ExpressJS, MongoDB
-         * Email Service: nodemailer
+* Front-end: HTML, CSS, JavaScript, ReactJS
+* Back-end: NodeJS, ExpressJS, MongoDB
+* Email Service: nodemailer
 
 ## How to Use
-1.Clone the repository to your local machine
-2.Install the dependencies using npm install
-3.Create a .env file and add the necessary environment variables
-4.Start the server using node index.js
-5.Start the client using npm start
+1. Clone the repository to your local machine
+2. Install the dependencies using npm install
+3. Create a .env file and add the necessary environment variables
+4. Start the server using node index.js
+5. Start the client using npm start
 #### License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
