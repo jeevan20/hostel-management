@@ -1,7 +1,9 @@
 const express = require("express");
-const mongoose = require("mongoose");
 const cors = require("cors");
 const cookieparser = require("cookie-parser");
+require("dotenv").config();
+const app = express();
+
 const authRoute = require("./routes/auth");
 
 const adminpage = require("./routes/adminpage");
@@ -14,10 +16,6 @@ const mail = require("./routes/mail");
 const studentDetails = require("./routes/studentDetails");
 const queries = require("./routes/queries");
 const viewdue = require("./routes/viewdue");
-
-require("dotenv").config();
-const app = express();
-
 const connectDB = require("./config/DB");
 
 // cors

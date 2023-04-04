@@ -14,6 +14,7 @@ const connectDB = () => {
     .catch((err) => {
       console.log(err);
     });
+  mongoose.set("strictQuery", false);
 };
 
 module.exports = connectDB;
