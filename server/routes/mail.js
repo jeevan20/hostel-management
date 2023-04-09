@@ -2,6 +2,7 @@ const express = require("express");
 const nodemailer = require("nodemailer");
 const router = express.Router();
 const isAuth = require("../middleware/isAuth");
+require("dotenv").config();
 
 const transporter = nodemailer.createTransport({
   port: 465, // true for 465, false for other ports
