@@ -1,16 +1,16 @@
 import { React } from "react";
-import Register from "./components/Register";
-import Login from "./components/Login";
-import Home from "./components/Homepage";
-import Contact from "./components/Contact";
-import Adminpage from "./components/Adminpage";
-import AdminQueryview from "./components/AdminQueryview";
-import Userpage from "./components/StudentComponents/UserProfile";
-import Complaints from "./components/StudentComponents/Complaints";
-import Fine from "./components/StudentComponents/Fine";
+import Register from "./Components/Register";
+import Login from "./Components/Login";
+import Home from "./Components/Homepage";
+import Contact from "./Components/Contact";
+import Adminpage from "./Components/Adminpage";
+import AdminQueryview from "./Components/AdminQueryview";
+import Userpage from "./Components/StudentComponents/UserProfile";
+import Complaints from "./Components/StudentComponents/Complaints";
+import Fine from "./Components/StudentComponents/Fine";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import AdminFineView from "./components/AdminFineView";
+import AdminFineView from "./Components/AdminFineView";
 
 const router = createBrowserRouter([
   {
